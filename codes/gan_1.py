@@ -14,7 +14,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 
-os.makedirs('output', exist_ok=True)
+os.makedirs('codes/output', exist_ok=True)
 
 img_shape = (1, 28, 28)
 
@@ -64,7 +64,7 @@ dataset = torch.utils.data.DataLoader(
     datasets.MNIST('data/', train=True, download=True,
                    transform=transforms.Compose([
                        transforms.ToTensor(),
-                       transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+                       transforms.Normalize((0.5,), (0.5,))
                    ])),batch_size=64, shuffle=True)
 
 if torch.cuda.is_available():
@@ -115,4 +115,4 @@ for epoch in range(20):
         
         total_batch = epoch * len(dataset) + i
         if total_batch % 400 == 0:
-            save_image(gen.data[:25], 'output/%d.png' % total_batch, nrow=5, normalize=True)
+            save_image(gen.data[:25], 'codes/output/%d.png' % total_batch, nrow=5, normalize=True)
