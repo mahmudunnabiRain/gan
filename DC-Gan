@@ -1,0 +1,5 @@
+basic differecence between simple-Gan vs DC-Gan:
+https://medium.com/activating-robotic-minds/having-fun-with-deep-convolutional-gans-f4f8393686ed#:~:text=The%20Difference%20between%20the%20Simple,a%20simple%20fully%20connected%20network.&text=The%20generator%20of%20the%20DCGAN,sampling%20of%202D%20image%20size.
+
+transposed convolution / Deconvolution (used as upsampling technique fpr DC-Gan):
+https://towardsdatascience.com/transposed-convolution-demystified-84ca81b4baba#:~:text=Transposed%20convolution%20is%20also%20known,upsample%20the%20input%20feature%20map.
