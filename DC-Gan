@@ -3,3 +3,6 @@ https://medium.com/activating-robotic-minds/having-fun-with-deep-convolutional-g
 
 transposed convolution / Deconvolution (used as upsampling technique fpr DC-Gan):
 https://towardsdatascience.com/transposed-convolution-demystified-84ca81b4baba#:~:text=Transposed%20convolution%20is%20also%20known,upsample%20the%20input%20feature%20map.
+
+max pooling:
+https://www.youtube.com/watch?v=ZjM_XQa5s6s
